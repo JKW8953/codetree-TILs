@@ -14,7 +14,7 @@ int main()
             st.push('(');
         else
         {
-            if (st.empty())
+            if (st.empty() == false)
                 st.pop();
             else
             {
