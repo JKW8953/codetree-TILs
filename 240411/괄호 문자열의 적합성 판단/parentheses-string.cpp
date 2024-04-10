@@ -5,28 +5,27 @@ using namespace std;
 
 int main()
 {
-    bool flag = true;
-        stack<char> st;
-        string str;
-        cin >> str;
-        for (int i = 0; i < str.size(); ++i)
+    stack<char> st;
+    string str;
+    cin >> str;
+    for (int i = 0; i < str.size(); ++i)
+    {
+        if (str[i] == '(')
+            st.push('(');
+        else
         {
-            if (str[i] == '(')
-                st.push('(');
+            if (st.empty())
+                st.pop();
             else
             {
-                if (st.empty() == false)
-                    st.pop();
-                else
-                {
-                    flag = false;
-                    break;
-                }
+                cout << "No";
+                return 0;
             }
         }
-        if ((flag == false) || (st.empty() == false))
-            cout << "No" << '\n';
-        else
-            cout << "Yes" << '\n';
+    }
+    if (st.empty() == false)
+        cout << "No" << '\n';
+    else
+        cout << "Yes" << '\n';
     return 0;
 }
