@@ -1,0 +1,87 @@
+#include <iostream>
+using namespace std;
+
+bool leapyear(int Y){
+    if(Y%4==0){
+        if(Y%100==0){
+            if(Y%400==0)
+                return true;
+            else
+                return false;
+        }
+        return true;
+    }
+    return false;
+}
+
+bool existday(int Y, int M, int D){
+    switch(M){
+        case 2:
+            if(leapyear(Y)){
+                if(D>29)
+                    return false;
+                else
+                    return true;
+            }
+            else{
+                if(D>28)
+                    return false;
+                else
+                    return true;
+            }
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            if(D==31)
+                return false;
+            else
+                return true;
+        default:
+            return true;
+    }
+}
+
+void result(){
+    int Y, M, D;
+    cin >> Y >> M >> D;
+    if(existday(Y, M, D)){
+        switch(M){
+            case 3:
+            case 4:
+            case 5:
+                cout << "Spring";
+                return;
+            case 6:
+            case 7:
+            case 8:
+                cout << "Summer";
+                return;
+            case 9:
+            case 10:
+            case 11:
+                cout << "Fall";
+                return;
+            case 12:
+            case 1:
+            case 2:
+                cout << "Winter";
+                return;
+        }
+    }
+    else{
+        cout << -1;
+        return;
+    }
+}
+
+
+
+
+int main() {
+    result();
+    // Y년이 윤년인지 판단하는 함수(2월판단용)
+    // Y년 중 M월 D일이 존재하는지 판단하는 함수(아니면 -1 출력)
+    // Y년 중 M월 D일이 존재한다면 어떤 계절인지 판단하는 함수
+    return 0;
+}
