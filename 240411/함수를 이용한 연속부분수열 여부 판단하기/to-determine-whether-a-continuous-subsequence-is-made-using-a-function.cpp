@@ -19,6 +19,7 @@ bool check(){
         if(check2(i))
             return true;
     }
+    return false;
 }
 
 
