@@ -12,17 +12,10 @@ bool find369(int i){
 }
 
 bool target(int i){
-    if(i%3==0 || find369(i))
-        return true;
-    else
-        return false;
+    return (i%3==0 || find369(i));
 }
 
 int main() {
-    ios_base :: sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-
     int cnt=0;
     int a, b;
     cin >> a >> b;
