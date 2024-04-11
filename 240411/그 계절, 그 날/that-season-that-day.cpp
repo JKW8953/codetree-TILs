@@ -42,7 +42,7 @@ bool existday(int Y, int M, int D){
     }
 }
 
-void result(){
+int main() {
     int Y, M, D;
     cin >> Y >> M >> D;
     if(existday(Y, M, D)){
@@ -51,37 +51,26 @@ void result(){
             case 4:
             case 5:
                 cout << "Spring";
-                return;
+                return 0;
             case 6:
             case 7:
             case 8:
                 cout << "Summer";
-                return;
+                return 0;
             case 9:
             case 10:
             case 11:
                 cout << "Fall";
-                return;
+                return 0;
             case 12:
             case 1:
             case 2:
                 cout << "Winter";
-                return;
+                return 0;
         }
     }
     else{
         cout << -1;
-        return;
+        return 0;
     }
-}
-
-
-
-
-int main() {
-    result();
-    // Y년이 윤년인지 판단하는 함수(2월판단용)
-    // Y년 중 M월 D일이 존재하는지 판단하는 함수(아니면 -1 출력)
-    // Y년 중 M월 D일이 존재한다면 어떤 계절인지 판단하는 함수
-    return 0;
 }
