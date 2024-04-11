@@ -5,17 +5,22 @@ using namespace std;
 int n1, n2;
 int a[100], b[100];
 
+bool check2(int i){
+    for(int j=0;j<n2;++j){
+            if(a[j+i]!=b[j])
+                return false;
+        }
+        return true;
+}
+
+
 bool check(){
     for(int i=0;i<=n1-n2;++i){
-        if(a[i]==b[0]){
-            for(int j=i;j<i+n2;++j){
-                if(a[j]!=b[j-i])
-                    return false;
-            }
+        if(check2(i))
             return true;
-        }
     }
 }
+
 
 int main() {
     cin >> n1 >> n2;
