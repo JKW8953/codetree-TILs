@@ -6,7 +6,7 @@ int n1, n2;
 int a[100], b[100];
 
 bool check(){
-    for(int i=0;i<n1-n2;++i){
+    for(int i=0;i<=n1-n2;++i){
         if(a[i]==b[0]){
             for(int j=i;j<i+n2;++j){
                 if(a[j]!=b[j-i])
