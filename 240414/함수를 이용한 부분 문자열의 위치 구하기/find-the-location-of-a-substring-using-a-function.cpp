@@ -2,7 +2,7 @@
 #include <cstring>
 using namespace std;
 
-char str[100], substr[100];
+char str[1000], substr[1000];
 
 int idx;
 
