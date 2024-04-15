@@ -16,6 +16,9 @@ int main() {
 		sum += arr[i];
 		cnt++;
 	}
-	cout << sum << " " << round(sum / cnt * 10) / 10;
+	cout << sum << " ";
+    cout << fixed;
+    cout << setprecision(1);
+    cout << round(sum / cnt * 10) / 10;
 	return 0;
 }
