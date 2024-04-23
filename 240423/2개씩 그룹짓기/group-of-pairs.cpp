@@ -15,7 +15,7 @@ int main() {
     sort(arr, arr+2*n);
 
     int sum = 0;
-    for(int i=0;i<=n/2;++i)
+    for(int i=0;i<=n;++i)
         sum = max(sum, arr[i]+arr[2*n-1-i]);
 
     cout << sum;
