@@ -25,9 +25,9 @@ int main() {
 	}
 
 	int idx = 0;
-	for (int i = 1; i < 5; ++i) {
-		if (vec[i].score > vec[i - 1].score)
-			idx == i;
+	for (int i = 0; i < 4; ++i) {
+		if (vec[idx].score > vec[i + 1].score)
+			idx == i + 1;
 	}
 
 	cout << vec[idx].codename << " " << vec[idx].score;
