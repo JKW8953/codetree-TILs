@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int arr[1000];
+int arr[2000];
 
 int main() {
     // 여기에 코드를 작성해주세요.
