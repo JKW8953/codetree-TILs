@@ -1,22 +1,27 @@
 #include <iostream>
 #include <algorithm>
 
+
 using namespace std;
 
-bool ifSameword(string first, string second) {
-	if (first.length() != second.length()) return false;
-	sort(first.begin(), first.end());
-	sort(second.begin(), second.end());
-	for (int i = 0; i < first.length(); ++i)
-		if (first[i] != second[i]) return false;
-	return true;
-}
-
 int main() {
-	int n;
-	cin >> n;
-	string first, second;
-	cin >> first >> second;
-	cout << (ifSameword(first, second) ? "Yes" : "No");
+	string str1;
+    string str2;
+    cin >> str1 >> str2;
+
+    sort(str1.begin(), str1.end());
+    sort(str2.begin(), str2.end());
+
+    if(str1.length()!=str2.length()){
+        cout << "No";
+        return 0;
+    }
+
+	for (int i = 0; i < str1.length(); ++i)
+		if (str1[i] != str2[i]) {
+			cout << "No";
+			return 0;
+		}
+	cout << "Yes";
 	return 0;
 }
