@@ -18,7 +18,7 @@ int main() {
 	int n;
 	cin >> n;
 
-	Data result("", "", "Rain");
+	Data result("9999-99-99", "", "Rain");
 
 	for (int i = 0; i < n; ++i) {
 		string date, day, weather;
