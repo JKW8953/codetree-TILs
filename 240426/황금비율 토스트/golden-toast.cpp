@@ -36,10 +36,8 @@ int main()
 			if (it != l.end()) it++;
 			break;
 		case 'D':
-			if (it != l.end()) {
-				it++;
-				l.erase(it);
-			}
+			if (it != l.end())
+				it = l.erase(it);
 			break;
 		case 'P':
 			char alphabet;
