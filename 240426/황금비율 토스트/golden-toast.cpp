@@ -42,7 +42,7 @@ int main()
 		case 'P':
 			char alphabet;
 			cin >> alphabet;
-			it = l.insert(it, alphabet);
+			l.insert(it, alphabet);
 			break;
 		}
 	}
