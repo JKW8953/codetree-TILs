@@ -39,7 +39,6 @@ int main()
 			if (it != l.end()) {
 				it++;
 				l.erase(it);
-                it--;
 			}
 			break;
 		case 'P':
