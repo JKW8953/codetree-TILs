@@ -10,7 +10,6 @@ for i in range(n):
         arr_2d[i][j] = num
         num += 1
 
-# 출력
 for row in arr_2d:
     for elem in row:
         print(elem, end=" ")
