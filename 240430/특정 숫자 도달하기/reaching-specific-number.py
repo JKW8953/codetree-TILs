@@ -9,4 +9,4 @@ for elem in arr:
 
 hap = sum(new_arr)
 
-print(hap, hap/len(new_arr))
+print(hap, round(hap/len(new_arr), 1))
