@@ -4,7 +4,8 @@ class Spy:
         self.m = meetingpoint
         self.t = time
 
-secretcode, meetingpoint, time = "codetree", "L", 13
+secretcode, meetingpoint, time = input().split()
+time = int(time)
 
 spy1 = Spy(secretcode, meetingpoint, time)
 print("secret code :", spy1.s)
