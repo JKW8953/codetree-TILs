@@ -2,7 +2,7 @@ binary = input()
 
 num = 0
 
-for i in range(5):
-    num = num * 2 + int(binary[i])
+for elem in binary:
+    num = num * 2 + int(elem)
 
 print(num)
