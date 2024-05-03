@@ -12,9 +12,7 @@ for _ in range(n):
             arr[i][j] = 1
 
 count = 0
-for i in range(201):
-    for j in range(201):
-        if arr[i][j] == 1:
-            count += 1
+for row in arr:
+    count += sum(row)
 
 print(count)
