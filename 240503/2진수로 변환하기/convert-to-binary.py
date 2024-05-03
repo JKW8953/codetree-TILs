@@ -1,8 +1,8 @@
 n = int(input())
 binary = []
 
-if n < 1:
-    print(0)
+if n <= 1:
+    print(n)
 else:
     while not n < 1:
         binary.append(n % 2)
