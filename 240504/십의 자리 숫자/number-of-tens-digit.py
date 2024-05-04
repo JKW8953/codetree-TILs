@@ -3,7 +3,7 @@ arr = list(map(int, input().split()))
 cnt = [0 for _ in range(10)]
 
 for elem in arr:
-    if elem = 0:
+    if elem == 0:
         break
     if elem < 10:
         continue
