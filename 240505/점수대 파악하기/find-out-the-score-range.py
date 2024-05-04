@@ -5,6 +5,8 @@ score = [0 for _ in range(10)]
 for elem in arr:
     if elem == 0:
         break
+    if elem < 10:
+        continue
     score[(elem // 10) - 1] += 1
 
 score.reverse()
