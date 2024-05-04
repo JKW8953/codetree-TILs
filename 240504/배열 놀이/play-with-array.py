@@ -14,4 +14,5 @@ while q > 0:
     if qes[0] == 3:
         for i in arr[qes[1]-1:qes[2]]:
             print(i, end=' ')
+        print()
     q -= 1
