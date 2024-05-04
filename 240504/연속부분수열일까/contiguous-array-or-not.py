@@ -14,7 +14,9 @@ else:
                 if A[i+j] != B[j]:
                     flag = False
                     break
-                flag = True
+                if j == len(B) - 1:
+                    flag = True
+                    break
             if flag:
                 break
                 
