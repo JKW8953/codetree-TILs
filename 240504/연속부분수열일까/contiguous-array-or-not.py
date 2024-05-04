@@ -15,5 +15,7 @@ else:
                     flag = False
                     break
                 flag = True
+            if flag:
+                break
                 
     print("Yes") if flag else print("No")
