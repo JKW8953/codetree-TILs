@@ -1,5 +1,4 @@
 #include <iostream>
-#include <utility>
 
 using namespace std;
 
@@ -9,7 +8,6 @@ int main() {
         char cold;
         int temp = 0;
         cin >> cold >> temp;
-        pair<char, int> person = make_pair(cold, temp);
         if (cold == 'Y'){
             if (temp >= 37) arr[0]++;
             else arr[2]++;
