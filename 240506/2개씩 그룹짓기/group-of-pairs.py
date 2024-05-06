@@ -3,4 +3,10 @@ arr = list(map(int, input().split()))
 
 arr.sort()
 
-print(arr[int(len(arr)/2) - 1] + arr[int(len(arr)/2)])
+maximum = 0
+for i in range(int(n)):
+    min_maximum = arr[i] + arr[2*n-i-1]
+    if maximum > min_maximum:
+        min_maximum = maximum
+    
+print(min_maximum)
