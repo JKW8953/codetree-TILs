@@ -10,11 +10,11 @@ for _ in range(n):
     if LR == 'R':
         for i in range(start, start + x):
             arr[i] += 1
-        start += x - 1
+        start += x
     else:
         for i in range(start - x, start):
             arr[i] += 1
-        start -= x - 1
+        start -= x
 
 cnt = 0
 for elem in arr:
