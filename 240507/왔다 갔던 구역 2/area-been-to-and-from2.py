@@ -9,12 +9,12 @@ for _ in range(n):
     x = int(x)
     if LR == 'R':
         for i in range(start, start + x):
-            start += 1
             arr[i] += 1
+        start += x - 1
     else:
-        for i in range(start, start - x - 1, -1):
-            start -= 1
+        for i in range(start - x, start):
             arr[i] += 1
+        start -= x - 1
 
 cnt = 0
 for elem in arr:
