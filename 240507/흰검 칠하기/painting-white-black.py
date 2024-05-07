@@ -13,12 +13,12 @@ for _ in range(n):
         for i in range(start - 1, start + x - 1):
             color[i] = 'B'
             black[i] += 1
-        start += x
+        start += x - 1
     else:
-        for i in range(start - x - 1, start - 1):
+        for i in range(start - x, start):
             color[i] = 'W'
             white[i] += 1
-        start -= x
+        start -= x - 1
 
 white_cnt, black_cnt, gray_cnt = 0, 0, 0
 for i in range(2000001):
