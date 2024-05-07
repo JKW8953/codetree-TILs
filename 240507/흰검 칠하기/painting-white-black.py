@@ -10,12 +10,12 @@ for _ in range(n):
     x, LR = input().split()
     x = int(x)
     if LR == 'R':
-        for i in range(start, start + x):
+        for i in range(start - 1, start + x - 1):
             color[i] = 'B'
             black[i] += 1
         start += x
     else:
-        for i in range(start - x, start):
+        for i in range(start - x - 1, start - 1):
             color[i] = 'W'
             white[i] += 1
         start -= x
