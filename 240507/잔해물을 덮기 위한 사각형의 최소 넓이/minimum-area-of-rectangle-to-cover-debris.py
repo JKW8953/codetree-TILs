@@ -22,6 +22,9 @@ for row in range(2001):
             row_val.append(row)
             col_val.append(col)
 
-S = (max(row_val) - min(row_val) + 1) * (max(col_val) - min(col_val) + 1)
+if len(row_val) != 0 and len(col_val) != 0:
+    S = (max(row_val) - min(row_val) + 1) * (max(col_val) - min(col_val) + 1)
+else:
+    S = 0
 
 print(S)
