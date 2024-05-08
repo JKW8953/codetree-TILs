@@ -8,7 +8,7 @@ for _ in range(n):
     name, h, w = tuple(input().split())
     students.append(Student(name, int(h), int(w)))
 
-students.sort(lambda s: s.h)
+students.sort(key = lambda s: s.h)
 
 for elem in students:
     print(elem.name, elem.h, elem.w)
