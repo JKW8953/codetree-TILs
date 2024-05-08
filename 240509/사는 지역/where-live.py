@@ -17,6 +17,6 @@ for i in range(n):
         latest_idx = i
 
 
-print(f"name {users[n-1].name}")
-print(f"addr {users[n-1].addr}")
-print(f"city {users[n-1].city}")
+print(f"name {users[latest_idx].name}")
+print(f"addr {users[latest_idx].addr}")
+print(f"city {users[latest_idx].city}")
