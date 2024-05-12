@@ -1,4 +1,5 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int arr[101];
@@ -9,7 +10,7 @@ int main() {
     for (int i = 0; i < n; ++i)
         cin >> arr[i];
     
-    int sum = 100000;
+    int sum = INT_MAX;
 
     for (int i = 0; i < n; ++i){
         int new_sum = 0;
