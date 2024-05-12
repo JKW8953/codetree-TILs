@@ -23,7 +23,5 @@ for i in range(2, n * m + 1):
     answer[x][y] = i
 
 
-for i in range(n):
-    for j in range(m):
-        print(answer[i][j], end = ' ')
-    print()
+for row in answer:
+    print(*row)
