@@ -1,7 +1,3 @@
-n = int(input())
-
-arr = [list(map(int, input().split())) for _ in range(n)]
-
 dxs, dys = [1, 0, -1, 0], [0, -1, 0, 1]
 
 def in_range(x, y):
@@ -15,6 +11,11 @@ def check(x, y):
             cnt += 1
     if cnt >= 3:
         return True
+
+
+n = int(input())
+
+arr = [list(map(int, input().split())) for _ in range(n)]
 
 ans = 0
 for x in range(n):
